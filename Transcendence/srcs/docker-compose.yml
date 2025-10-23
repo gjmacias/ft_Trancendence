@@ -1,0 +1,129 @@
+services:
+  waf:
+    container_name: waf
+    build:
+      context:      ./containers/waf
+    environment:    [MODSEC_RULE_ENGINE=On]
+    restart:        always
+
+    networks:       [transcendence]
+    ports:          [8443:443] 
+    depends_on:     [frontend, backend, game, blockchain]
+
+    cap_add:        [IPC_LOCK]
+    security_opt:   [seccomp=unconfined]
+    env_file:       .env
+
+  vault:
+    container_name: vault
+    build:
+      context:      ./containers/vault
+    environment:    [VAULT_DEV_ROOT_TOKEN_ID=root]
+    restart:        always
+
+    ports:          [8200:8200]
+    healthcheck:
+      test: ["CMD", "curl", "-k", "https://localhost:8200/v1/sys/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+    networks:       [transcendence]
+    cap_add:        [IPC_LOCK]
+    security_opt:   [seccomp=unconfined]
+    env_file:       .env
+
+  frontend:
+    container_name: frontend
+    build:
+      context:      ./containers/frontend
+    env_file:       .env
+    restart:        always
+    networks:       [transcendence]
+
+  backend:
+    container_name: backend
+    build:
+      context:      ./containers/backend
+    env_file:       .env
+    restart:        always
+    networks:       [transcendence]
+    depends_on:
+      vault:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+
+  # database:
+  #   container_name: database
+  #   build:
+  #     context:      ./containers/database
+  #   env_file:       .env
+  #   restart:        always
+
+  #   networks:       [transcendence]
+  #   depends_on:     [backend]
+
+  game:
+    container_name: game
+    build:
+      context:      ./containers/game
+    env_file:       .env
+    restart:        always
+
+    networks:       [transcendence]
+    depends_on:     [backend]
+
+  # chat:
+  #   container_name: chat
+  #   build:
+  #     context:      ./containers/chat
+  #   env_file:       .env
+  #   restart:        always
+
+  #   networks:       [transcendence]
+  #   depends_on:     [frontend]
+
+  blockchain: 
+    container_name: blockchain
+    build:
+      context:      ./containers/blockchain
+    env_file:       .env
+    restart:        always
+    
+    networks:       [transcendence]
+    depends_on:     [backend]
+
+  # Prometheus - Metrics collection and storage
+  # Scrapes metrics from all services for monitoring and alerting
+  prometheus:
+    build:
+      context:        ./containers/prometheus
+      dockerfile:     Dockerfile
+    container_name:   prometheus
+    restart:          always
+    networks:
+      - transcendence
+    env_file:         .env
+
+
+  # Grafana - Metrics visualization and dashboards
+  # Provides web interface for monitoring system performance
+  grafana:
+    build:
+      context:        ./containers/grafana
+      dockerfile:     Dockerfile
+    container_name:   grafana
+    restart:          always
+    networks:
+      - transcendence
+    depends_on:
+      - prometheus
+    env_file:         .env
+
+
+
+
+networks:
+  transcendence:
+    driver: bridge

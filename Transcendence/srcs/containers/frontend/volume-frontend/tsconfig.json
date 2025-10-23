@@ -1,0 +1,15 @@
+// For vscode to recognize the path aliases and other tsconfig settings
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "esnext",
+		"baseUrl": ".",
+		"paths": {
+			"@utils/*": ["utils/*"],
+			"@components/*": ["components/*"],
+			"@pages/*": ["pages/*"],
+			"@Game/*": ["components/Game/*"],
+			"@/*": ["*"]
+		},
+	}
+}

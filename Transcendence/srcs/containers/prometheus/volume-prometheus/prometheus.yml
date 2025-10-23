@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus self-monitoring (HTTPS)
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scheme: 'https'
+    tls_config:
+      cert_file: /etc/prometheus/certs/prometheus/prometheus.crt
+      key_file: /etc/prometheus/certs/prometheus/prometheus.key
+      ca_file: /etc/prometheus/certs/prometheus/ca.crt
+      insecure_skip_verify: false
+
+  # Backend service monitoring (HTTPS con certificado auto-firmado)
+  - job_name: 'backend'
+    static_configs:
+      - targets: ['backend:4000']
+    metrics_path: '/backend/metrics'
+    scheme: 'https'
+    tls_config:
+      insecure_skip_verify: true
+    scrape_interval: 15s

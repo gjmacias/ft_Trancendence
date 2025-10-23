@@ -1,0 +1,23 @@
+FROM node:24-alpine AS build
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies (will be copied in via volume during dev)
+COPY ./conf/package*.json ./
+COPY ./conf/* ./
+COPY ./public/ ./public/
+COPY ./assets/ ./public/assets/
+COPY ./volume-frontend/ ./src/
+COPY index.html ./
+COPY ./certs/ ./certs/
+
+RUN npm install
+
+# END CACHED
+
+# Expose port for dev server
+EXPOSE 5173
+
+# Default command (overridden by docker-compose for dev)
+CMD ["npm", "run", "dev"]

@@ -1,0 +1,25 @@
+{
+  "name": "backend-game",
+  "version": "1.0.0",
+  "description": "code for Pong Game",
+  "scripts": {
+	"dev": "ts-node-dev --respawn --transpile-only --poll src/game.ts",
+    "build": "tsc",
+    "start": "node public/game.js"
+  },
+  "dependencies": {
+	"fastify": "5.4.0",
+	"dotenv": "17.2.0",
+	"jsonwebtoken": "9.0.2",
+	"@fastify/websocket": "11.2.0",
+	"axios": "1.11.0",
+	"uuid": "11.1.0"
+  },
+  "devDependencies": {
+	"babylonjs": "8.17.0",
+	"typescript": "5.8.3",
+	"@types/node": "24.0.13",
+	"ts-node-dev": "2.0.0",
+	"tap": "21.1.0"
+  }
+}

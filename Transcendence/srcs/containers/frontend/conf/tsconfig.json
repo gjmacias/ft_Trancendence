@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // JavaScript output version, ESNext is the latest version
+    "useDefineForClassFields": true, // Use define for class fields (in line with the latest ECMAScript proposal)
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Libraries to include in the compilation
+    "allowJs": false, // Disallow JavaScript files from being compiled
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable strict type checking for safer code
+    "forceConsistentCasingInFileNames": true, // Force consistent casing in file names
+    "module": "ESNext", // Specify module code generation (ESNext for latest module system)
+    "moduleResolution": "Node", // Specify module resolution strategy (Node for Node.js)
+    "resolveJsonModule": true, // Enable importing JSON modules
+    "isolatedModules": true, // Isolate modules for better type checking
+    "noEmit": true, // Do not emit output files (vite handles this)
+	"types": ["babylonjs"]
+  },
+  "include": ["src"], // Check files in the src directory
+  "exclude": ["node_modules"] // Ignore files in the node_modules directory (standard practice)
+}

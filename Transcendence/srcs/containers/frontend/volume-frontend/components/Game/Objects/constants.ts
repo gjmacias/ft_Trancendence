@@ -1,0 +1,8 @@
+export const
+  GROUND_Z = 20,
+  WALL_HEIGHT = 5,
+  WALL_WIDTH = 14,
+  PADDLE_DEPTH = 10,
+  PADDLE_WIDTH = 10,
+  MISCO = 1;
+

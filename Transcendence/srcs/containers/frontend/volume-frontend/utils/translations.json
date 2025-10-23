@@ -1,0 +1,630 @@
+{
+	"play": {
+		"page-title": {
+			"en": "PONG",
+			"es": "PONG",
+			"ca": "PONG"
+		}
+	},
+	"overlay": {
+		"start-local-game-button": {
+			"en": "Local Game",
+			"es": "Juego local",
+			"ca": "Joc local"
+		},
+		"start-bot-game-button": {
+			"en": "Bot Game",
+			"es": "Juego Bot",
+			"ca": "Joc Bot"
+		},
+		"start-remote-game-button": {
+			"en": "Remote Game",
+			"es": "Juego en remoto",
+			"ca": "Joc en remot"
+		},
+		"remote-code-display": {
+			"en": "Code: ",
+			"es": "Código: ",
+			"ca": "Codi: "
+		},
+		"create-game-button": {
+			"en": "Create Game",
+			"es": "Crear juego",
+			"ca": "Crear joc"
+		},
+		"join-game-button": {
+			"en": "Join Game",
+			"es": "Unirse al juego",
+			"ca": "Uneix-te al joc"
+		},
+		"start-game-button": {
+			"en": "Start game",
+			"es": "Iniciar juego",
+			"ca": "Iniciar joc"
+		},
+		"joined-game-message": {
+			"en": "You have joined the game!",
+			"es": "¡Te has unido al juego!",
+			"ca": "T'has unit al joc!"
+		},
+		"create-game-error-alert": {
+			"en": "Error creating game. Please try again later.",
+			"es": "Error al crear el juego. Por favor, inténtalo de nuevo más tarde.",
+			"ca": "Error en crear el joc. Si us plau, torna-ho a intentar més tard."
+		},
+		"join-game-error-alert": {
+			"en": "Error joining game. Please try again later.",
+			"es": "Error al unirse al juego. Por favor, inténtalo de nuevo más tarde.",
+			"ca": "Error en unir-te al joc. Si us plau, torna-ho a intentar més tard."
+		},
+		"start-remote-game-error-alert": {
+			"en": "Error starting remote game. Please try again later.",
+			"es": "Error al iniciar el juego en remoto. Por favor, inténtalo de nuevo más tarde.",
+			"ca": "Error en iniciar el joc en remot. Si us plau, torna-ho a intentar més tard."
+		},
+		"loading-text": {
+			"en": "Loading",
+			"es": "Cargando",
+			"ca": "Carregant"
+		},
+		"matchmaking-text": {
+			"en": "Searching for an opponent",
+			"es": "Buscando un oponente",
+			"ca": "Buscant un oponent"
+		},
+		"results-title": {
+			"draw": {
+				"en": "Draw!",
+				"es": "Empate!",
+				"ca": "Empat!"
+			},
+			"wins": {
+				"en": "Wins!",
+				"es": "Gana!",
+				"ca": "Guanya!"
+			}
+		},
+		"results-return-button": {
+			"en": "Return to Menu",
+			"es": "Volver al menú",
+			"ca": "Torna al menú"
+		},
+		"announcement-title": {
+			"en": "Next match:",
+			"es": "Siguiente partido:",
+			"ca": "Següent partit:"
+		},
+		"countdown-title": {
+			"en": "Get ready!",
+			"es": "¡Prepárate!",
+			"ca": "Prepara't!"
+		},
+		"countdown-text": {
+			"en": "Match starts in:",
+			"es": "El partido comienza en:",
+			"ca": "El partit comença en:"
+		},
+		"error-title": {
+			"en": "Something went wrong...",
+			"es": "Algo ha salido mal...",
+			"ca": "Alguna cosa ha anat malament..."
+		},
+		"error-text": {
+			"en": "An unexpected error occurred when trying to start the game. Please try again later.",
+			"es": "Se ha producido un error inesperado al iniciar el juego. Por favor, inténtalo de nuevo más tarde.",
+			"ca": "S'ha produït un error inesperat en intentar iniciar el joc. Si us plau, torna-ho a intentar més tard."
+		},
+		"error-text-already-in-game": {
+			"en": "You are already in a game. Please finish your current game before starting a new one.",
+			"es": "Ya estás en una partida. Por favor, termina tu partida actual antes de iniciar una nueva.",
+			"ca": "Ja estàs en una partida. Si us plau, acaba la teva partida actual abans d'iniciar una de nova."
+		},
+		"tournament-results-title": {
+			"en": "Results",
+			"es": "Resultados",
+			"ca": "Resultats"
+		},
+		"tournament-winner-title": {
+			"en": "Winner",
+			"es": "Ganador",
+			"ca": "Guanyador"
+		},
+		"tournament-runnerup-title": {
+			"en": "Runner Up",
+			"es": "Subcampeón",
+			"ca": "Subcampió"
+		},
+		"tournament-participants-title": {
+			"en": "Participants",
+			"es": "Participantes",
+			"ca": "Participants"
+		},
+		"tournament-blockchain-button": {
+			"active": {
+				"en": "View on Blockchain",
+				"es": "Ver en la Blockchain",
+				"ca": "Veure a la Blockchain"
+			},
+			"inactive": {
+				"en": "Uploading to Blockchain...",
+				"es": "Subiendo a la Blockchain...",
+				"ca": "Pujant a la Blockchain..."
+			}
+		}
+	},
+	"tournament": {
+		"page-title": {
+			"en": "Tournament",
+			"es": "Torneo",
+			"ca": "Torneig"
+		},
+		"tournament-text": {
+			"en": "Tournament registration is open! Add the aliases of all the participants and click on 'Start Tournament' to begin.",
+			"es": "¡La inscripción al torneo está abierta! Agrega los alias de todos los participantes y haz clic en 'Iniciar torneo' para comenzar.",
+			"ca": "La inscripció al torneig està oberta! Afegeix els àlies de tots els participants i fes clic a 'Iniciar torneig' per començar."
+		},
+		"registry-title": {
+			"en": "Add Player to Tournament",
+			"es": "Agregar jugador al torneo",
+			"ca": "Afegeix jugador al torneig"
+		},
+		"player-name-label": {
+			"en": "Player Name",
+			"es": "Nombre del jugador",
+			"ca": "Nom del jugador"
+		},
+		"player-name-placeholder": {
+			"en": "Enter player alias",
+			"es": "Ingresa el alias del jugador",
+			"ca": "Introdueix l'àlies del jugador"
+		},
+		"color-input-label": {
+			"en": "Paddle Color",
+			"es": "Color de la paleta",
+			"ca": "Color de la paleta"
+		},
+		"add-player-button": {
+			"en": "Add Player",
+			"es": "Agregar jugador",
+			"ca": "Afegeix jugador"
+		},
+		"start-tournament-button": {
+			"en": "Start Tournament",
+			"es": "Iniciar torneo",
+			"ca": "Iniciar torneig"
+		},
+		"alert-registration-fail": {
+			"en": "Tournament registration failed!",
+			"es": "¡La inscripción al torneo ha fallado!",
+			"ca": "La inscripció al torneig ha fallat!"
+		},
+		"alert-registration-success": {
+			"en": "Tournament registration successful!",
+			"es": "¡La inscripción al torneo ha sido exitosa!",
+			"ca": "La inscripció al torneig ha estat exitosa!"
+		},
+		"alert-missing-alias": {
+			"en": "Please enter a player alias.",
+			"es": "Por favor, introduce un alias de jugador.",
+			"ca": "Si us plau, introdueix un àlies de jugador."
+		},
+		"alert-no-players": {
+			"en": "No players registered!",
+			"es": "¡No hay jugadores registrados!",
+			"ca": "No hi ha jugadors registrats!"
+		},
+		"alert-duplicate-alias": {
+			"en": "This alias is already taken. Please choose another one.",
+			"es": "Este alias ya está en uso. Por favor, elige otro.",
+			"ca": "Aquest àlies ja està en ús. Si us plau, tria un altre."
+		}
+	},
+	"friends": {
+		"page-title": {
+			"en": "Friends",
+			"es": "Amigos",
+			"ca": "Amics"
+		}
+	},
+	"settings": {
+		"page-title": {
+			"en": "Settings",
+			"es": "Configuración",
+			"ca": "Configuració"
+		}
+	},
+	"profile": {
+		"page-title": {
+			"en": "Profile",
+			"es": "Perfil",
+			"ca": "Perfil"
+		},
+		"user-profile-info": {
+			"en": "User Profile Information",
+			"es": "Información del perfil del usuario",
+			"ca": "Informació del perfil de l'usuari"
+		},
+		"cancel-button": {
+			"en": "Cancel",
+			"es": "Cancelar",
+			"ca": "Cancel·lar"
+		},
+		"nickname": {
+			"en": "nickname",
+			"es": "nickname",
+			"ca": "nickname"
+		},
+		"nickname-label": {
+			"en": "Nickname:",
+			"es": "Nickname:",
+			"ca": "Nickname:"
+		},
+		"password-label": {
+			"en": "Password:",
+			"es": "Contraseña:",
+			"ca": "Contrasenya:"
+		},
+		"nickname-same-as-current": {
+			"en": "No changes made",
+			"es": "No se han realizado cambios",
+			"ca": "No s'han realitzat canvis"
+		},
+		"nickname-update-success": {
+			"en": "Nickname updated successfully!",
+			"es": "¡Nickname actualizado con éxito!",
+			"ca": "Nickname actualitzat amb èxit!"
+		},
+		"nickname-update-fail": {
+			"en": "Failed to update nickname",
+			"es": "Error al actualizar el nickname",
+			"ca": "Error en actualitzar el nickname"
+		},
+		"password-update-success": {
+			"en": "Password updated successfully!",
+			"es": "¡Contraseña actualizada con éxito!",
+			"ca": "Contrasenya actualitzada amb èxit!"
+		},
+		"password-update-fail": {
+			"en": "Failed to update password",
+			"es": "Error al actualizar la contraseña",
+			"ca": "Error en actualitzar la contrasenya"
+		},
+		"submit-button-edit": {
+			"en": "Edit",
+			"es": "Editar",
+			"ca": "Editar"
+		},
+		"submit-button-submit": {
+			"en": "Submit",
+			"es": "Enviar",
+			"ca": "Enviar"
+		},
+		"two-factor-title": {
+			"en": "Two Factor Authentication (2FA)",
+			"es": "Autenticación de dos factores (2FA)",
+			"ca": "Doble factor d'autenticació (2FA)"
+		},
+		"two-factor-setting-label-enabled": {
+			"en": "Enabled:",
+			"es": "Habilitado:",
+			"ca": "Habilitat:"
+		},
+		"two-factor-setting-label-reset": {
+			"en": "Reset 2FA:",
+			"es": "Restablecer 2FA:",
+			"ca": "Restablir 2FA:"
+		},
+		"reset-button": {
+			"en": "Reset",
+			"es": "Restablecer",
+			"ca": "Restablir"
+		},
+		"alert-2fa-reset-success": {
+			"en": "2FA has been reset successfully. You will have to set it up again the next time you log in.",
+			"es": "La 2FA se ha restablecido con éxito. Tendrás que configurarla nuevamente la próxima vez que inicies sesión.",
+			"ca": "El 2FA s'ha restablert amb èxit. Hauràs de configurar-la novament la propera vegada que iniciïs sessió."
+		},
+		"gdpr-title": {
+			"en": "General Data Protection Regulation (GDPR)",
+			"es": "Reglamento General de Protección de Datos (RGPD)",
+			"ca": "Reglament General de Protecció de Dades (RGPD)"
+		},
+		"gdpr-anonymize-label": {
+			"en": "Anonymize my data:",
+			"es": "Anonimizar mis datos:",
+			"ca": "Anonimitza les meves dades:"
+		},
+		"gdpr-view-data-label": {
+			"en" : "View my data",
+			"es": "Ver mis datos",
+			"ca": "Veure les meves dades"	
+		},
+		"gdpr-account-deletion-label": {
+			"en": "Delete my account:",
+			"es": "Eliminar mi cuenta:",
+			"ca": "Elimina el meu compte:"
+		},
+		"gdpr-delete-label": {
+			"en": "Delete",
+			"es": "Eliminar",
+			"ca": "Elimina"
+		},
+		"gdpr-cancel-label": {
+			"en": "Cancel",
+			"es": "Cancelar",
+			"ca": "Cancel·lar"
+		},
+		"gdpr-delete-confirmation-title": {
+			"en": "Write: 'I, (my_username) want to delete my account'.",
+			"es": "Escribe: 'I, (mi_nombre_de_usuario) want to delete my account'.",
+			"ca": "Escriu: 'I, (el_meu_nom_d'usuari) want to delete my account'."
+		},
+		"gdpr-delete-confirmation-input": {
+			"en": "Type here",
+			"es": "Escribe aquí",
+			"ca": "Escriu aquí"
+		},
+		"gdpr-view-data-dialog-title": {
+			"en": "Your Data (keep in mind this cannot be modified here)",
+			"es": "Tus datos (ten en cuenta que no se pueden modificar aquí)",
+			"ca": "Les teves dades (tingues en compte que no es poden modificar aquí)"
+		},
+		"gdpr-view-data-username": {
+			"en": "Username: ",
+			"es": "Nombre de usuario: ",
+			"ca": "Nom d'usuari: "
+		},
+		"gdpr-view-data-email": {
+			"en": "Email ",
+			"es": "Correo electrónico: ",
+			"ca": "Correu electrònic: "
+		},
+		"gdpr-view-data-close-label": {
+			"en": "Close",
+			"es": "Cerrar",
+			"ca": "Tanca"
+		}
+	},
+	"chat": {
+		"page-title": {
+			"en": "Chat",
+			"es": "Chat",
+			"ca": "Xat"
+		}
+	},
+	"login": {
+		"page-title": {
+			"en": "Welcome!",
+			"es": "¡Bienvenido!",
+			"ca": "Benvingut!"
+		},
+		"form-nickname": {
+			"en": "nickname",
+			"es": "nickname",
+			"ca": "nickname"
+		},
+		"form-password": {
+			"en": "password",
+			"es": "contraseña",
+			"ca": "contrasenya"
+		},
+		"form-login-button": {
+			"en": "Login",
+			"es": "Accede",
+			"ca": "Accedeix"
+		},
+		"form-signup-button": {
+			"en": "Sign Up",
+			"es": "Regístrate",
+			"ca": "Registra't"
+		},
+		"auth-42-button": {
+			"en": "Sign up with 42",
+			"es": "Entra con 42",
+			"ca": "Entra amb 42"
+		},
+		"auth-google-button": {
+			"en": "Sign up with Google",
+			"es": "Entra con Google",
+			"ca": "Entra amb Google"
+		},
+		"invalid-nickname-or-password": {
+			"en": "Invalid nickname or password.",
+			"es": "Nickname o contraseña inválidos.",
+			"ca": "Nickname o contrasenya invàlids."
+		}
+	},
+	"signup": {
+		"page-title": {
+			"en": "Sign Up",
+			"es": "Regístrate",
+			"ca": "Registra't"
+		},
+		"form-nickname": {
+			"en": "nickname",
+			"es": "nickname",
+			"ca": "nickname"
+		},
+		"form-email": {
+			"en": "email",
+			"es": "correo electrónico",
+			"ca": "correu electrònic"
+		},
+		"form-password": {
+			"en": "password",
+			"es": "contraseña",
+			"ca": "contrasenya"
+		},
+		"form-confirm-password": {
+			"en": "confirm password",
+			"es": "confirmar contraseña",
+			"ca": "confirmar contrasenya"
+		},
+		"form-register-button": {
+			"en": "Register",
+			"es": "Registrarse",
+			"ca": "Registrar-se"
+		},
+		"auth-42-button": {
+			"en": "Sign up with 42",
+			"es": "Accede con 42",
+			"ca": "Accedeix amb 42"
+		},
+		"auth-google-button": {
+			"en": "Sign up with Google",
+			"es": "Accede con Google",
+			"ca": "Accedeix amb Google"
+		},
+		"footer-text": {
+			"en": "Already have an account?",
+			"es": "¿Ya tienes una cuenta?",
+			"ca": "Ja tens un compte?"
+		},
+		"footer-link": {
+			"en": "Login here",
+			"es": "Inicia sesión aquí",
+			"ca": "Inicia sessió aquí"
+		},
+		"nickname-too-short": {
+			"en": "Nickname must be at least 3 characters long.",
+			"es": "El nickname debe tener al menos 3 caracteres.",
+			"ca": "El nickname ha de tenir almenys 3 caràcters."
+		},
+		"nickname-period-start": {
+			"en": "Nickname can't start with a period.",
+			"es": "El nickname no puede comenzar con un punto.",
+			"ca": "El nickname no pot començar amb un punt."
+		},
+		"nickname-period-end": {
+			"en": "Nickname can't end with a period.",
+			"es": "El nickname no puede terminar con un punto.",
+			"ca": "El nickname no pot acabar amb un punt."
+		},
+		"nickname-only-numbers": {
+			"en": "Nickname can't contain only numbers.",
+			"es": "El nickname no puede contener solo números.",
+			"ca": "El nickname no pot contenir només números."
+		},
+		"nickname-invalid-character": {
+			"en": "Nickname can only use letters, numbers, underscores and periods.",
+			"es": "El nickname solo puede usar letras, números, guiones bajos y puntos.",
+			"ca": "El nickname només pot fer servir lletres, números, guions baixos i punts."
+		},
+		"nickname-taken": {
+			"en": "Nickname is already taken.",
+			"es": "El nickname ya está en uso.",
+			"ca": "El nickname ja està en ús."
+		},
+		"email-invalid": {
+			"en": "Please enter a valid email address.",
+			"es": "Por favor, introduce una dirección de correo electrónico válida.",
+			"ca": "Si us plau, introdueix una adreça de correu electrònic vàlida."
+		},
+		"email-taken": {
+			"en": "An account with this email already exists.",
+			"es": "Ya existe una cuenta con este correo electrónico.",
+			"ca": "Ja existeix un compte amb aquest correu electrònic."
+		},
+		"password-too-short": {
+			"en": "Password must be at least 8 characters long.",
+			"es": "La contraseña debe tener al menos 8 caracteres.",
+			"ca": "La contrasenya ha de tenir almenys 8 caràcters."
+		},
+		"password-letters-and-numbers": {
+			"en": "Password must contain at least one letter and one number.",
+			"es": "La contraseña debe contener al menos una letra y un número.",
+			"ca": "La contrasenya ha de contenir almenys una lletra i un número."
+		},
+		"password-contains-nickname": {
+			"en": "Password cannot contain your nickname.",
+			"es": "La contraseña no puede contener tu nickname.",
+			"ca": "La contrasenya no pot contenir el teu nickname."
+		},
+		"confirm-password-mismatch": {
+			"en": "Passwords do not match.",
+			"es": "Las contraseñas no coinciden.",
+			"ca": "Les contrasenyes no coincideixen."
+		},
+		"complete-all-fields": {
+			"en": "All fields must be valid to register.",
+			"es": "Todos los campos deben ser válidos para registrarse.",
+			"ca": "Tots els camps han de ser vàlids per registrar-se."
+		}
+	},
+	"verify": {
+		"page-title": {
+			"en": "2FA Verification",
+			"es": "Verificación 2FA",
+			"ca": "Verificació 2FA"
+		},
+		"qr-title": {
+			"en": "Scan the QR code with your authenticator app",
+			"es": "Escanea el código QR con tu aplicación de autenticación",
+			"ca": "Escaneja el codi QR amb la teva aplicació d'autenticació"
+		},
+		"code-input-label": {
+			"en": "Enter the 6-digit code from your authenticator app here:",
+			"es": "Introduce el código de 6 dígitos de tu aplicación de autenticación aquí:",
+			"ca": "Introdueix el codi de 6 dígits de la teva aplicació d'autenticació aquí:"
+		},
+		"submit-button": {
+			"en": "Verify",
+			"es": "Verificar",
+			"ca": "Verificar"
+		}
+	},
+	"404": {
+		"label-404": {
+			"en": "Page Not Found",
+			"es": "Página no encontrada",
+			"ca": "Pàgina no trobada"
+		}
+	},
+	"sidebar": {
+		"play": {
+			"en": "Play",
+			"es": "Jugar",
+			"ca": "Jugar"
+		},
+		"tournament": {
+			"en": "Tournament",
+			"es": "Torneo",
+			"ca": "Torneig"
+		},
+		"friends": {
+			"en": "Friends",
+			"es": "Amigos",
+			"ca": "Amics"
+		},
+		"settings": {
+			"en": "Settings",
+			"es": "Configuración",
+			"ca": "Configuració"
+		},
+		"profile": {
+			"en": "Profile",
+			"es": "Perfil",
+			"ca": "Perfil"
+		},
+		"chat": {
+			"en": "Chat",
+			"es": "Chat",
+			"ca": "Xat"
+		},
+		"logout": {
+			"en": "Logout",
+			"es": "Cerrar sesión",
+			"ca": "Tancar sessió"
+		},
+		"alert-logout-error": {
+			"en": "An error occurred during logout. Please try again later.",
+			"es": "Ocurrió un error durante el cierre de sesión. Por favor, inténtalo de nuevo más tarde.",
+			"ca": "S'ha produït un error durant la sessió. Si us plau, torna-ho a intentar més tard."
+		}
+	},
+	"unexpected-error": {
+		"en": "An unexpected error occurred. Please try again later.",
+		"es": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo más tarde.",
+		"ca": "S'ha produït un error inesperat. Si us plau, torna-ho a intentar més tard."
+	}
+}
