@@ -50,9 +50,7 @@ El proyecto incluye prácticamente todas las funcionalidades planteadas, con la 
 5. [Instalación y ejecución](#5-instalación-y-ejecución)
 6. [Demostración](#6-demostración)
 7. [Qué hemos aprendido](#7-qué-hemos-aprendido)
-8. [Cómo contribuir](#cómo-contribuir)
-9. [Integrantes y contacto](#integrantes-y-contacto)
-
+8. [Cómo contribuir](#8-cómo-contribuir)
 ---
 
 ## **2. Arquitectura de la aplicación**
@@ -258,7 +256,7 @@ Si deseas contribuir al proyecto:
 # Quizás pueda interesarte!
 
 ### - Perfil de GitHub apresas-
-[AQUÍ]([https://github.com/faltrum](https://github.com/apresas-97))
+[AQUÍ](https://github.com/apresas-97)
 
 ### - Perfil de GitHub Oseivane
 [AQUÍ](https://github.com/faltrum)
